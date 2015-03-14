@@ -1,0 +1,12 @@
+# Site settings
+title: cutalion's sidenotes
+email: cutalion@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Nothing to it
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://blg.ctln.pw" # the base hostname & protocol for your site
+twitter_username: cutalion
+github_username:  cutalion
+
+# Build settings
+markdown: kramdown
