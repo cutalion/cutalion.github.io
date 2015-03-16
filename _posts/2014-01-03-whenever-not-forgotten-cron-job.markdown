@@ -3,17 +3,17 @@ layout: post
 title: "Whenever: not forgotten cron job"
 date: 2014-01-03 15:34
 comments: true
-categories: 
+categories:
 ---
 
-Today I'd like to save a note on how to ensure that I configured your cron jobs
-properly (and that I actually did it).
+Today I'd like to share a note on how to be confident that the new cron job is
+configured properly and is added to crontab.
 
-When I add new job for a cron into my project, I want to document somehow when
-it should be run on the server. With [whenever](https://github.com/javan/whenever) it is dead simple to do this
-in tests. I will test my cron jobs anyway, so keeping all in one place seems a
-right way.
+I usually use [whenever](https://github.com/javan/whenever) to configure cron jobs.
+Assuming that the deployment is set up properly, we will only need to check that
+the cron job is added to whenever's `schedule.rb` file.
 
+Here's an example.
 Consider we want to clean up our database monthly on 1st of 'Month'. It doesn't
 matter what "clean up" means here. Let it be "delete old unpaid orders" or
 "delete draft posts made by anonymous users"
@@ -74,3 +74,5 @@ every 1.month, :at => 'midnight' do
   runner 'Cron.cleanup'
 end
 {% endhighlight %}
+
+That's it.
