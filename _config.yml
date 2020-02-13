@@ -2,12 +2,9 @@
 title: cutalion's sidenotes
 email: cutalion@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  He’s an inspirer and the mentoring pastor. Moreover, he is an accepted
-  evangelist of teamwork and enjoys its social component. In addition,
-  being a BDD gospeller he is able to advocate its benefits for long.
-  He’s a big fan of any sort of multiplayer games like tennis or soccer.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://blg.ctln.pw" # the base hostname & protocol for your site
+url: "https://blg.ctln.pw" # the base hostname & protocol for your site
+main_domain: "ctln.pw"
 twitter_username: cutalion
 github_username:  cutalion
 
